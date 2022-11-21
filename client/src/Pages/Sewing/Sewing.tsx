@@ -49,33 +49,6 @@ const Sewing: React.FC = (): ReactElement => {
                   <p className="we-can__item">Футболки</p>
                 </div>
 
-                <div className="we-can__one-card">
-                  <div className="we-can__picture">
-                  <img src="/oneCardSewing.jpg" alt="one-card" className='we-can__image' />
-                  </div>
-                  <p className="we-can__item">Футболки</p>
-                </div>
-
-                <div className="we-can__one-card">
-                  <div className="we-can__picture">
-                  <img src="/oneCardSewing.jpg" alt="one-card" className='we-can__image' />
-                  </div>
-                  <p className="we-can__item">Футболки</p>
-                </div>
-
-                 <div className="we-can__one-card">
-                  <div className="we-can__picture">
-                  <img src="/oneCardSewing.jpg" alt="one-card" className='we-can__image' />
-                  </div>
-                  <p className="we-can__item">Футболки</p>
-                </div>
-
-                <div className="we-can__one-card">
-                  <div className="we-can__picture">
-                  <img src="/oneCardSewing.jpg" alt="one-card" className='we-can__image' />
-                  </div>
-                  <p className="we-can__item">Футболки</p>
-                </div>
               </div>
             </div>
             <div className="sewing__garanty garanty">

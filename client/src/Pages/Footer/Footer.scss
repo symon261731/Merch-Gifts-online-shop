@@ -42,6 +42,11 @@
         }
     }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__tel {
         color: #272525;
         font-weight: 600;
@@ -59,6 +64,12 @@
 
     }
 
+    &__famous {
+        display: flex;
+        align-items: center;
+        column-gap: 21.89px;
+    }
+
 
     &__title {
         color: #272525;
@@ -72,19 +83,56 @@
         line-height: 2.89;
     }
 
+    &__text_margin {
+        margin-bottom: 32.5px;
+    }
 
+    &__form {
+        position: relative;
+        max-width: 277px;
+    }
 
+    &__input {
+        position: relative;
+        width: 277px;
+        font-size: 14px;
+        padding: 15px;
+        padding-right: 45px;
+        border: 2px solid #272525;
+        border-radius: 15px;
 
+        &::placeholder {
+            line-height: 1.64;
+            font-size: 14px;
+            color: #272525;
+        }
+    }
 
-
-
-
-
-
-
+    &__button {
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        top: 14%;
+        width: 34px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #524983;
+        background-image: url('../../../public/svg/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: 11px;
+        background-position: center;
+    }
 
     &__signature {
         text-align: center;
+
+        &:last-child {
+            margin-bottom: 39.5px;
+        }
+    }
+
+    &__signature_underline {
+        text-decoration: underline;
     }
 }
 
