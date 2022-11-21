@@ -1,0 +1,166 @@
+.sewing {
+    position: relative;
+
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__title_margin-top {
+        margin-top: 68px;
+    }
+
+    &__title {
+        max-width: 747px;
+        color: #272525;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.25;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        color: #454747;
+        font-size: 18px;
+        line-height: 1.3;
+        max-width: 638px;
+
+        &:not(:last-child) {
+            margin-bottom: 31px;
+        }
+    }
+
+    &__merch {
+        max-width: 539px;
+        max-height: 810px;
+        position: absolute;
+        right: 10%;
+        top: -5%;
+        z-index: -1;
+    }
+
+    &__info {
+        display: flex;
+        column-gap: 69px;
+        align-items: center;
+        margin-bottom: 129px;
+    }
+
+    &__number {
+        font-size: 16px;
+        line-height: 1.3;
+        color: #3C336C;
+    }
+}
+
+
+.sewing__we-can {
+    &:not(:last-child) {
+        margin-bottom: 97px;
+    }
+}
+
+.we-can {
+
+    &__title {
+        color: #272525;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &__sub-title {
+        color: #454747;
+        font-size: 18px;
+        line-height: 1.3;
+        letter-spacing: 0.065em;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 43px;
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    &__one-card {
+        flex: 1 1 23.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    &__picture {
+        max-width: 377px;
+        max-height: 250px;
+        margin-bottom: 15px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    &__item {
+        align-self: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #272525;
+        line-height: 1.05;
+    }
+}
+
+
+.sewing__garanty {
+    margin-bottom: 97px;
+}
+
+
+.garanty {
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 133px;
+    }
+
+    &__info {
+        flex: 1 1 33%;
+    }
+
+    &__title {
+        color: #272525;
+        line-height: 1.3;
+        font-weight: 600;
+        font-size: 36px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__info {
+        font-size: 16px;
+        line-height: 1.3;
+        color: #454747;
+
+    }
+
+    &__bold {
+        font-weight: 600;
+    }
+
+    &__purple-color {
+        color: #3C336C;
+    }
+}

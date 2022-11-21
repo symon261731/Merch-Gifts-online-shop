@@ -1,0 +1,66 @@
+@import '../App/vars.scss';
+
+.background-image {
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+
+
+
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__info {
+        padding-top: 51px;
+        padding-bottom: 51px;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+        column-gap: 68px;
+    }
+
+    &__picture {
+        max-width: 487px;
+        max-height: 39px;
+    }
+
+    // &__logo {
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    // }
+
+    &__input {
+        font-size: 16px;
+        flex: 0 1 491px;
+        background-color: transparent;
+        border: 4px solid #272525;
+        border-radius: 90px;
+        padding: 18px 28px;
+
+        &::placeholder {
+            padding-left: 36px;
+            font-size: 16px;
+            background: url('../../../public/svg/search.svg');
+            background-repeat: no-repeat;
+            background-size: 19px;
+            background-position: 0px -0.5px;
+            font-weight: 500;
+        }
+    }
+
+    &__fitcha {
+        display: flex;
+        align-items: center;
+        column-gap: 39px
+    }
+
+
+}
