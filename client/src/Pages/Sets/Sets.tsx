@@ -1,8 +1,11 @@
 import React, { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
+import Garanty from '../Garanty/Garanty'
+import OneCard from './OneCard/OneCard'
 import './Sets.scss'
 
 const Sets: React.FC = (): ReactElement => {
+  const arr: [number, number, number, number] = [1, 2, 3, 4]
   return (
         <div className="sets">
           <div className="sets__container">
@@ -20,23 +23,31 @@ const Sets: React.FC = (): ReactElement => {
             </div>
             <div className="sets__cards cards">
               <h3 className="cards__title">Готовые Наборы</h3>
-              <div className="cards__one-card">
-                <img src="/sets/setOne.jpg" alt="oneSet" className="cards__image" />
-                <p className="cards__name">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-                <p className="cards__subname">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
-                <div className="cards__colors">
-                  <button className="cards__item"></button>
-                  <button className="cards__item"></button>
-                </div>
-                <div className="cards__footer">
-                  <div className="cards__price">
-                    <p className="cards__text">From Price</p>
-                    <p className="cards__number">$76.43</p>
-                  </div>
-                  <button className="cards__buy">
-                    <img src="/svg/shopping-basket.svg" alt="trush" />
-                  </button>
-                </div>
+              <div className="cards__list">
+              {arr.map((el, index) => <OneCard key={ index } />)}
+              </div>
+              <div className="cards__func">
+              <button type='button' className="cards__spoiler spoiler">
+                <p className="spoiler__text">Показать ещё</p>
+                <img src="/svg/spoiler-arrow.svg" className='spoiler__arrow' alt="nope" />
+              </button>
+              </div>
+            </div>
+            <div className="sets__garanty">
+            <Garanty/>
+            </div>
+            <div className="sets__form  creative">
+              <img src="/sets/Pangolin.svg" alt="creative" className='creative__item' />
+              <h2 className="creative__title">Как создать бокс по Вашей идее?</h2>
+              <p className="creative__text">У вас своя уникальная идея для бокса или хотите все стилизовать к одному виду?</p>
+              <div className="creative__ask">
+                <p className="creative__offer">Введите свои контактные данные, и наш менеджер свяжется с Вами <span className='creative__green'> в течении 15 минут </span> </p>
+                <form onSubmit={(e) => e.preventDefault()} className='creative__form'>
+                  <input type="text" className="creative__input" name='name' />
+                  <input type="email" className="creative__input" name='email' />
+                  <input type="tel" className="creative__input" name='phone' />
+                  <button type='submit' className='creative__button green-button'>Заказать</button>
+                </form>
               </div>
             </div>
           </div>

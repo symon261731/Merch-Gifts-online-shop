@@ -73,6 +73,10 @@
         line-height: 1.4;
 
     }
+
+    &__cards {
+        margin-bottom: 33px;
+    }
 }
 
 
@@ -89,9 +93,33 @@
         }
     }
 
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 29px;
+        // &:not(:last-child) {
+        //     margin-bottom: 33px;
+        // }
+        margin-bottom: 33px;
+    }
+
     &__one-card {
         display: flex;
         flex-direction: column;
+        max-width: 378px;
+    }
+
+    &__image {
+        border-radius: 16px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__content {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     &__name {
@@ -99,5 +127,99 @@
         font-weight: 600;
         line-height: 1.05;
         font-size: 24px;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
     }
+
+    &__subname {
+        color: $grey;
+        font-size: 12px;
+        line-height: 1.05;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__colors {
+        display: flex;
+        column-gap: 5px;
+        margin-bottom: 44px;
+    }
+
+    &__item {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        background-color: $purple;
+        border-radius: 50%;
+    }
+
+    &__item_green {
+        background-color: $green;
+    }
+
+
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        color: #c4c4c4;
+        font-size: 24px;
+        line-height: 1.05;
+        font-weight: 600;
+
+    }
+
+    &__number {
+        color: #c4c4c4;
+        font-size: 24px;
+        line-height: 1.05;
+        font-weight: 600;
+    }
+
+    &__buy {}
+
+    &__btn {
+        background-color: transparent;
+    }
+
+    &__spoiler {
+        cursor: pointer;
+        background-color: transparent;
+        color: $darkcolor;
+        line-height: 1.3;
+        font-size: 24px;
+        font-weight: 700;
+        display: flex;
+        margin-left: 20px;
+        column-gap: 24px;
+    }
+
+}
+
+.spoiler {
+
+    // &:hover {
+    //     border: 1px solid black;
+    // }
+
+    &__arrow {
+        position: relative;
+        padding-top: 10px;
+    }
+}
+
+.cards__func {
+    margin-bottom: 89px;
+}
+
+.sets__garanty {
+    margin-bottom: 125.85px;
 }
