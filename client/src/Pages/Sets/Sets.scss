@@ -1,0 +1,103 @@
+@import '../App/vars.scss';
+
+.sets {
+
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__images {
+        position: absolute;
+        right: 13%;
+        top: 23%;
+        z-index: -5;
+    }
+
+    &__first-image {
+        position: absolute;
+        right: 250px;
+        top: 80px;
+        z-index: -2;
+        max-width: 648px;
+        max-height: 648px;
+    }
+
+    &__second-image {
+        position: absolute;
+        right: -30px;
+        top: 190px;
+        z-index: -2;
+        max-width: 626px;
+        max-height: 500px;
+    }
+
+    &__intro {
+        margin-top: 68px;
+        max-width: 638px;
+
+    }
+
+    &__title {
+        color: $darkcolor;
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.25;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        color: $grey;
+        font-size: 18px;
+        letter-spacing: 0.065em;
+        margin-bottom: 42px;
+
+    }
+
+    &__buttons {
+        display: flex;
+        column-gap: 45px;
+        align-items: center;
+
+        margin-bottom: 240px;
+    }
+
+    &__link {
+        color: $purple;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.4;
+
+    }
+}
+
+
+
+.cards {
+    &__title {
+        color: $darkcolor;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__one-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        color: $darkcolor;
+        font-weight: 600;
+        line-height: 1.05;
+        font-size: 24px;
+    }
+}

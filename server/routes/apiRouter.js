@@ -1,10 +1,11 @@
 const express = require('express');
 
 const router = express.Router();
+const { Request } = require('../db/models');
 
-router.post('/TelephoneNumber', (req, res) => {
+router.post('/TelephoneNumber', async (req, res) => {
   const { telephone } = req.body;
-  console.log(telephone);
+  await Request.create({ telephone });
   res.sendStatus(200);
 });
 
