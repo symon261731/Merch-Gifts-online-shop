@@ -36,18 +36,25 @@ const Sets: React.FC = (): ReactElement => {
             <div className="sets__garanty">
             <Garanty/>
             </div>
-            <div className="sets__form  creative">
-              <img src="/sets/Pangolin.svg" alt="creative" className='creative__item' />
-              <h2 className="creative__title">Как создать бокс по Вашей идее?</h2>
-              <p className="creative__text">У вас своя уникальная идея для бокса или хотите все стилизовать к одному виду?</p>
-              <div className="creative__ask">
-                <p className="creative__offer">Введите свои контактные данные, и наш менеджер свяжется с Вами <span className='creative__green'> в течении 15 минут </span> </p>
-                <form onSubmit={(e) => e.preventDefault()} className='creative__form'>
-                  <input type="text" className="creative__input" name='name' />
-                  <input type="email" className="creative__input" name='email' />
-                  <input type="tel" className="creative__input" name='phone' />
-                  <button type='submit' className='creative__button green-button'>Заказать</button>
-                </form>
+            <div className="sets__creative  creative">
+              <div className="creative__box">
+              <div className="creative__path">
+                <div className="creative__svg-picture">
+                  <img src="/sets/Pangolin.svg" alt="creative" className='creative__svg' />
+                </div>
+                <h2 className="creative__title">Как создать бокс по Вашей идее?</h2>
+                <p className="creative__text">У вас своя уникальная идея для бокса или хотите все стилизовать к одному виду?</p>
+                <div className="creative__ask">
+                  <p className="creative__offer">Введите свои контактные данные, и наш менеджер свяжется с Вами <span className='creative__green'> в течении 15 минут </span> </p>
+                  <form onSubmit={(e) => e.preventDefault()} className='creative__form'>
+                    <input placeholder='Ваше Имя' type="text" className="creative__input" name='name' />
+                    <input placeholder='Ваша электронная почта' type="email" className="creative__input" name='email' />
+                    <input placeholder='Ваш номер телефона' type="tel" className="creative__input" name='phone' />
+                    <button type='submit' className='creative__button green-button'>Заказать</button>
+                  </form>
+                </div>
+              </div>
+                <img src="/sets/Photo.jpg" alt="box" className='creative__image' />
               </div>
             </div>
           </div>

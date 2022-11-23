@@ -223,3 +223,112 @@
 .sets__garanty {
     margin-bottom: 125.85px;
 }
+
+.sets__creative {
+    margin-bottom: 176px;
+}
+
+.creative {
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 115px
+    }
+
+    &__path {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__svg-picture {
+        text-align: center;
+        margin-left: -10%;
+    }
+
+    &__svg {
+        max-width: 302px;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__text {
+        max-width: 570px;
+        color: #454747;
+        letter-spacing: 0.065em;
+        font-size: 18px;
+        line-height: 1.27;
+
+        &:not(:last-child) {
+            margin-bottom: 36px;
+        }
+    }
+
+    &__ask {
+        display: flex;
+        column-gap: 88px;
+    }
+
+    &__offer {
+        color: #222227;
+        flex: 1 1 300px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__green {
+        color: #1FAB8A;
+    }
+
+    &__form {
+        flex: 1 1 336px;
+        display: flex;
+        flex-direction: column;
+        // row-gap: ;
+    }
+
+    &__input {
+        width: 336px;
+        border-bottom: 1px solid #272525;
+        line-height: 1.18;
+        padding-bottom: 4px;
+        outline: none;
+
+        &:not(:last-child) {
+            margin-bottom: 34px;
+        }
+
+        &::placeholder {
+            color: #454757;
+        }
+
+        :focus {}
+    }
+
+    &__button {
+        align-self: flex-start;
+        padding: 19px 103px;
+        box-shadow: none;
+    }
+
+    &__picture {
+        max-width: 696px;
+        max-height: 620px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
