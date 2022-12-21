@@ -1,8 +1,19 @@
-import React, { ReactElement } from 'react'
+/* eslint-disable @typescript-eslint/no-floating-promises */
+import axios from 'axios'
+import React, { ReactElement, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Footer.scss'
 
 const Footer: React.FC = (): ReactElement => {
+  const [tel, setTel] = useState('')
+  const addNum = async (telephone: string): Promise<any> => {
+    try {
+      await axios.post('http://localhost:3010/api/telephoneNumber', { telephone }).then(res => console.log(res)
+      )
+    } catch (e) {
+      console.log(e)
+    }
+  }
   return (
     <div className='footer'>
       {/* <div className="background-footer">
@@ -41,8 +52,11 @@ const Footer: React.FC = (): ReactElement => {
             <div className="footer__contact">
               <p className="footer__title">Связаться с менеджером</p>
               <p className="footer__text footer__text_margin">Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер свяжеться с вами</p>
-              <form className='footer__form' onSubmit={(e) => e.preventDefault()}>
-              <input name='telephone' placeholder='Номер телефона' type="text" className="footer__input" />
+              <form className='footer__form' onSubmit={(e) => {
+                e.preventDefault()
+                addNum(tel)
+              }}>
+              <input value={tel} onChange={(e) => setTel(e.target.value)} name='telephone' placeholder='Номер телефона' type="text" className="footer__input" />
               <button type='submit' className='footer__button'></button>
               </form>
             </div>
